@@ -71,7 +71,7 @@ $(document).ready(function() {
         discount_Total = 0;
         type_discount = 0;
 
-        ++item_Count;
+        //++item_Count;
         $(quantity).each(function(key, value) {
             quantity = $('.quantity:eq(' + key + ')');
             price = $('.price:eq(' + key + ')');
@@ -96,7 +96,7 @@ $(document).ready(function() {
         discount_items.val(discount_Total);
         // grand total
         totalValue.val(cartTotal);
-        $('.itemsCount').text("Items(" + (item_Count) + ")");
+        //$('.itemsCount').text("Items(" + (item_Count) + ")");
     }
     // key up values added to total and grandTotal
     $('#items_table').on('keyup', '.update', function() {
