@@ -1,6 +1,6 @@
 # Simple JQuery-Cart-Page
 
-The cart page has a two column layout. The first column has the items (items' JSON data provided at the end) while the second one displays the total price container. The initial quantity of each item is 1.
+The cart page has a two column layout. The first column has the items (items' JSON data provided) while the second one displays the total price container.
 
 The user can delete the items from the cart.
 
