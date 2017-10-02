@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="Jquery cart example, javascript cart example, ecommerce cart jquery, cart" />
+    <!-- boostrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- jquery ui cdn -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+
+<body>
+    <!--  cart-page-header starts here-->
+    <header role="cart-page-header starts here">
+        <nav class="navbar navbar-light bg-light justify-content-center">
+            <span class="navbar-text h3">
+			    Cart Page
+			 </span>
+        </nav>
+    </header>
+    <!-- cart-page-header ends here -->
+    <!-- cart main starts here -->
+    <section role="main">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8" style="height: 500px; overflow-y: scroll;">
+                        <!-- atleast one item alert -->
+                        <div class="alert alert-warning alert-dismissible fade show d-none" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            Please Order Atleast One Item
+                        </div>
+                        <!--  each item alert -->
+                        <!-- <div class="alert alert-warning alert-dismissible d-none" id="item_each" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <span id="item_remove"></span>
+                        </div> -->
+                        <h2>< Order Summary</h2>
+                        <hr/>
+                        <table class="table table-bordered table-responsive item_length">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Item</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="items_table"></tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-4">
+                        <hr class="mt-5" />
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title h2">Total Amount</div>
+                                <table class="table table-responsive table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th class="itemsCount">Items</th>
+                                            <th>Discount</th>
+                                            <th>Type Discount</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="total_amt">
+                                        <tr>
+                                            <td>
+                                                <input type="text" class="form-control" id="grandTotal" disabled placeholder="0,00" autocomplete="off" />
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" name="discount" id="discount_items" disabled placeholder="0,00">
+                                            </td>
+                                            <td>
+                                                <input type="text" class="form-control" name="type_discount" id="type_discount" disabled placeholder="0,00">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="card-footer">
+                                <h6>Order Total <span class="float-right"><input type="text" class="form-control" name="total" id="total" disabled></span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cart main ends here -->
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- popper cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <!-- bootstrap cdn -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <!-- jquery 3.2.1 cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- jquery ui cdn -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- custom js -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
