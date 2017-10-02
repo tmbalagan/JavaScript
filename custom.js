@@ -81,10 +81,10 @@ $(document).ready(function() {
             qty = quantity.val().trim().replace(/[^0-9$.,]/g, '');
             qty = qty == '' ? '' : qty;
             // item price
-            itemPrice = price.text().trim().replace(/[^0-9$.,]/g, '');
-            itemPrice = itemPrice == '' ? '' : itemPrice;
+           // itemPrice = price.text().trim().replace(/[^0-9$.,]/g, '');
+            //itemPrice = itemPrice == '' ? '' : itemPrice;
             // itemPrice + quantity
-            grandTotalval = grandTotalval + (parseInt(itemPrice) * qty);
+            grandTotalval = grandTotalval + (parseInt(price.text()) * qty);
             // item discount + quantity
             discount_Total = discount_Total + (parseInt(discount.text()) * qty);
             // final grand cart Toatl
